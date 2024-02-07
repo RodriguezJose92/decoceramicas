@@ -252,11 +252,14 @@ async function serverData ({
     sendDataLayer({sku:skuNumber})
   };
 
-  MudiExperience({
-    tokenApi:'ATTkYedLSaMk3Jpe3stN',
-    skuNumber:document.querySelector('#refId').innerHTML.replace('REF ',''),
-    idCompanyMudi:400,
-    color:'#ae9c87',
-    containerBtns:document.querySelector('#show'),
-    zIndexModal:1000000,
+setTimeOut(()=>{
+    MudiExperience({
+        tokenApi:'ATTkYedLSaMk3Jpe3stN',
+        skuNumber:document.querySelector('#refId').innerHTML.replace('REF ',''),
+        idCompanyMudi:400,
+        color:'#ae9c87',
+        containerBtns:document.querySelector('#show'),
+        zIndexModal:1000000,
   })
+},2000);
+ 
