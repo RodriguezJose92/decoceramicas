@@ -252,7 +252,7 @@ async function serverData ({
     sendDataLayer({sku:skuNumber})
   };
 
-setTimeOut(()=>{
+setTimeout(()=>{
     MudiExperience({
         tokenApi:'ATTkYedLSaMk3Jpe3stN',
         skuNumber:document.querySelector('#refId').innerHTML.replace('REF ',''),
