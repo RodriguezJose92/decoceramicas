@@ -182,9 +182,7 @@ async function serverData ({
         event:'Evento de visualización Mudi',
         valorMudi:1,
         sku:sku,
-        categoria:document.querySelectorAll('.ambientegourmet-breadcrumb-2-x-link')[2] ? document.querySelectorAll('.ambientegourmet-breadcrumb-2-x-link')[2].innerHTML : 'null',
-        subCategoria:document.querySelectorAll('.ambientegourmet-breadcrumb-2-x-link')[3] ? document.querySelectorAll('.ambientegourmet-breadcrumb-2-x-link')[3].innerHTML : 'null',
-        seccion:document.querySelectorAll('.ambientegourmet-breadcrumb-2-x-link')[4] ? document.querySelectorAll('.ambientegourmet-breadcrumb-2-x-link')[4].innerHTML : 'null',
+        categoria:document.body.querySelector('#box-bread-brumb > div > ul > li.last > a > span').innerHTML||'null',
         sistemaOperativo:OSdevice
     });
 
@@ -194,9 +192,7 @@ async function serverData ({
             event:'Evento de intención de compra Mudi',
             valorMudi:1,
             sku:sku,
-            categoria:document.querySelectorAll('.ambientegourmet-breadcrumb-2-x-link')[2] ? document.querySelectorAll('.ambientegourmet-breadcrumb-2-x-link')[2].innerHTML : 'null',
-            subCategoria:document.querySelectorAll('.ambientegourmet-breadcrumb-2-x-link')[3] ? document.querySelectorAll('.ambientegourmet-breadcrumb-2-x-link')[3].innerHTML : 'null',
-            seccion:document.querySelectorAll('.ambientegourmet-breadcrumb-2-x-link')[4] ? document.querySelectorAll('.ambientegourmet-breadcrumb-2-x-link')[4].innerHTML : 'null',
+            categoria:document.body.querySelector('#box-bread-brumb > div > ul > li.last > a > span').innerHTML||'null',
             sistemaOperativo:OSdevice
         })
     },false);
@@ -207,9 +203,7 @@ async function serverData ({
             event:'Evento de interacción AR Mudi',
             valorMudi:1,
             sku:sku,
-            categoria:document.querySelectorAll('.ambientegourmet-breadcrumb-2-x-link')[2] ? document.querySelectorAll('.ambientegourmet-breadcrumb-2-x-link')[2].innerHTML : 'null',
-            subCategoria:document.querySelectorAll('.ambientegourmet-breadcrumb-2-x-link')[3] ? document.querySelectorAll('.ambientegourmet-breadcrumb-2-x-link')[3].innerHTML : 'null',
-            seccion:document.querySelectorAll('.ambientegourmet-breadcrumb-2-x-link')[4] ? document.querySelectorAll('.ambientegourmet-breadcrumb-2-x-link')[4].innerHTML : 'null',
+            categoria:document.body.querySelector('#box-bread-brumb > div > ul > li.last > a > span').innerHTML||'null',
             sistemaOperativo:OSdevice
         })
     },false);
@@ -220,9 +214,7 @@ async function serverData ({
             event:'Evento de interacción 3D Mudi',
             valorMudi:1,
             sku:sku,
-            categoria:document.querySelectorAll('.ambientegourmet-breadcrumb-2-x-link')[2] ? document.querySelectorAll('.ambientegourmet-breadcrumb-2-x-link')[2].innerHTML : 'null',
-            subCategoria:document.querySelectorAll('.ambientegourmet-breadcrumb-2-x-link')[3] ? document.querySelectorAll('.ambientegourmet-breadcrumb-2-x-link')[3].innerHTML : 'null',
-            seccion:document.querySelectorAll('.ambientegourmet-breadcrumb-2-x-link')[4] ? document.querySelectorAll('.ambientegourmet-breadcrumb-2-x-link')[4].innerHTML : 'null',
+            categoria:document.body.querySelector('#box-bread-brumb > div > ul > li.last > a > span').innerHTML||'null',
             sistemaOperativo:OSdevice
         })
     },false);
